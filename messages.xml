@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE msgs
+[
+<!ELEMENT msgs (msg+)>
+<!ELEMENT msg (sender,date,important?)>
+<!ATTLIST msg mid ID #REQUIRED>
+<!ELEMENT sender (to,from)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT important EMPTY>
+]>
+
+<msgs>
+  <msg mid="msg334">
+    <date>2023-03-13</date>
+    <sender>
+      <to>alan@revcon.com</to>
+      <from>sales@intergalatic.com.fr</from>
+    </sender>
+    <important />
+  </msg>
+  <msg mid="msg314">
+    <date>2023-03-12</date>
+    <sender>
+      <to>alice.c@revcon.com</to>
+      <from>m.lisbonne@kafka.ch</from>
+    </sender>
+  </msg>
+  <msg mid="msg239">
+    <date>2023-03-13</date>
+    <sender>
+      <to>alan@revcon.com</to>
+      <from>cooper.s@jpl.gov</from>
+    </sender>
+    <important />
+  </msg>
+</msgs>
